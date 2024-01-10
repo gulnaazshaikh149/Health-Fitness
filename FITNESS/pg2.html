@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness </title>
+    <link rel="stylesheet" href="pg.css">
+</head>
+
+<body>
+    <h1>DETAILS</h1>
+    <form action="pg2.php" method="POST">
+        
+        <div>
+            <label for="fname">Full Name:</label>
+            <!-- <input type="text" name="fname" id="fname" required>-->
+            <input type="text" name="fname" class="field-divided" placeholder="First" required/>
+            <input type="text" name="lname" class="field-divided" placeholder="Last" required/>
+        </div><br>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" required max="110">
+        </div><br>
+        <div>
+            <h3>Gender</h3>
+            <label class="container">Male
+                <input type="radio" checked="checked" name="gender" value="male">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Female
+                <input type="radio" name="gender" value="female">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Other
+                <input type="radio" name="gender" value="other">
+                <span class="checkmark"></span>
+              </label>
+             
+        </div><br>
+        <div>
+            <label for="height">Height:</label>
+            <input type="text" name="height" id="height" placeholder="in cms" required min="40" max="230">
+        </div><br>
+        <div>
+            <label for="weight">Weight:</label>
+            <input type="number" name="weight" id="weight" placeholder="in kg"  required>
+        </div><br>
+        <div>
+            <label for="Any Health related issues">Any Health related issues? :</label><br>
+            <textarea id="health" name="health" rows="4" cols="50"></textarea>
+        </div><br>
+        <div>
+            <label for="Allergic to">Allergic to? :</label><br>
+            <textarea id="allergy" name="allergy" rows="4" cols="50"></textarea>
+        </div>
+            <input type="submit" value="Submit" name="submit">
+       
+
+
+
+
+    </form>
+
+</body>
+
+</html>
